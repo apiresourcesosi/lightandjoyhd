@@ -14,11 +14,11 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <div className="relative h-20 w-55">
                 <Image
-                  src="/ljhdLogo_color_banner.png"
+                  src="/ljhdLogo_colorNoBgWht.png"
                   alt="Light & Joy Home Decor"
-                  width={500}
-                  height={100}
-                  className="object-contain object-left bg-green-300 p-2"
+                  width={700}
+                  height={300}
+                  className="object-contain object-left p-2"
                 />
               </div>
             </Link>

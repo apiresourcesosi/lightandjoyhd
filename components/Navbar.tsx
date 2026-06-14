@@ -52,7 +52,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="border-t-4 border-green-300 bg-green-900 text-white shadow-lg">
+    <header className="border-t-2 border-green-300 bg-green-900 text-white shadow-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         {/* Logo */}
         <Link
@@ -78,36 +78,6 @@ export default function Navbar() {
                     Home
                   </NavigationMenuLink>
                 </Link>
-              </NavigationMenuItem>
-
-              {/* Services Dropdown */}
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={triggerStyle}>
-                  Services
-                </NavigationMenuTrigger>
-
-                <NavigationMenuContent>
-                  <ul className="grid w-100 gap-3 p-4 md:grid-cols-2">
-                    {services.map((service) => (
-                      <li key={service.title}>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href={service.href}
-                            className="block rounded-md p-3 transition"
-                          >
-                            <div className="text-sm font-semibold text-green-900">
-                              {service.title}
-                            </div>
-
-                            <p className="mt-1 text-sm text-muted-foreground">
-                              {service.description}
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
               </NavigationMenuItem>
 
               {/* Products Dropdown */}
